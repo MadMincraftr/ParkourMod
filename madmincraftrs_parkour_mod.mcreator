@@ -1,0 +1,67 @@
+{
+  "mod_elements": [
+    {
+      "name": "MadMincraftrParkour",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mad_mincraftr_parkour"
+    },
+    {
+      "name": "KillBrick",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_brick"
+    },
+    {
+      "name": "KillBrickEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_brick_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "death.attack.killbrick": "%1$s stepped on a kill brick",
+      "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
+      "block.madmincraftrs_parkour_mod.kill_brick": "Kill Brick"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "madmincraftrs_parkour_mod",
+    "modName": "MadMincraftr\u0027s Parkour Mod",
+    "version": "1.0.0",
+    "author": "Thean, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mincraftr.parkour",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}
