@@ -31,14 +31,77 @@
           }
         ]
       }
+    },
+    {
+      "name": "AntiJump",
+      "type": "potioneffect",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_jump"
+    },
+    {
+      "name": "JumpCheck",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckpointTrigger",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckpointBlock",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint_block"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.madmincraftrs_parkour_mod.checkpoint_block": "Checkpoint Block",
       "death.attack.killbrick": "%1$s stepped on a kill brick",
       "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
+      "death.attack.antijump": "%1$s wasn\u0027t allowed to jump",
+      "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump",
       "block.madmincraftrs_parkour_mod.kill_brick": "Kill Brick"
     }
   },
@@ -49,17 +112,20 @@
   "workspaceSettings": {
     "modid": "madmincraftrs_parkour_mod",
     "modName": "MadMincraftr\u0027s Parkour Mod",
-    "version": "1.0.0",
-    "author": "Thean, MCreator",
+    "version": "DEV01",
+    "description": "DEV BUILD 01",
+    "author": "MadMincraftr",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "modicon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Mod made with the tool MCreator.",
     "modElementsPackage": "net.mincraftr.parkour",
     "lockBaseModFiles": false
   },

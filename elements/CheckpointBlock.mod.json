@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "killbrick",
+    "texture": "checkpoint",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -32,11 +32,11 @@
         "subtract": false
       }
     ],
-    "name": "Kill Brick",
+    "name": "Checkpoint Block",
     "specialInfo": [],
-    "hardness": -1.0,
-    "resistance": 999.0,
-    "hasGravity": false,
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:MadMincraftrParkour"
@@ -61,23 +61,19 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "RED",
+    "colorOnMap": "LIME",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "DANGER_OTHER",
-    "beaconColorModifier": {
-      "value": -1108715,
-      "falpha": 0.0
-    },
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.1,
-    "speedFactor": 0.0,
-    "jumpFactor": 0.0,
-    "reactionToPushing": "BLOCK",
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -98,16 +94,16 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 14,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CRIT"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 1.5,
-    "particleAmount": 5,
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -125,11 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityCollides": {
-      "name": "KillBrickEntityCollidesInTheBlock"
-    },
     "onEntityWalksOn": {
-      "name": "KillBrickEntityCollidesInTheBlock"
+      "name": "CheckpointTrigger"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

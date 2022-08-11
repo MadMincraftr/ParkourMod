@@ -72,14 +72,14 @@ public class KillBrickBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		for (int l = 0; l < 4; ++l) {
+		for (int l = 0; l < 5; ++l) {
 			double x0 = x + random.nextFloat();
 			double y0 = y + random.nextFloat();
 			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 0.5D;
-			double dy = (random.nextFloat() - 0.5D) * 0.5D;
-			double dz = (random.nextFloat() - 0.5D) * 0.5D;
-			world.addParticle(ParticleTypes.ENCHANTED_HIT, x0, y0, z0, dx, dy, dz);
+			double dx = (random.nextFloat() - 0.5D) * 1.5D;
+			double dy = (random.nextFloat() - 0.5D) * 1.5D;
+			double dz = (random.nextFloat() - 0.5D) * 1.5D;
+			world.addParticle(ParticleTypes.CRIT, x0, y0, z0, dx, dy, dz);
 		}
 	}
 

@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModTabs;
+import net.mincraftr.parkour.init.MadmincraftrsParkourModModMobEffects;
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModItems;
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModBlocks;
 
@@ -48,6 +49,8 @@ public class MadmincraftrsParkourModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MadmincraftrsParkourModModBlocks.REGISTRY.register(bus);
 		MadmincraftrsParkourModModItems.REGISTRY.register(bus);
+
+		MadmincraftrsParkourModModMobEffects.REGISTRY.register(bus);
 
 	}
 
