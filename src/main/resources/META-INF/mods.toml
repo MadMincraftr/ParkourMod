@@ -4,14 +4,14 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="madmincraftrs_parkour_mod"
-version="01"
+version="0.5.0"
 displayName="MadMincraftr's Parkour Mod"
 credits="Mod made with the tool MCreator."
-displayURL="https://mcreator.net"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod"
 logoFile="logo.png"
 authors="MadMincraftr"
 description='''
-DEV BUILD 01
+BETA 1 FOR RELEASE 1.0.0
 '''
 
 [[dependencies.madmincraftrs_parkour_mod]]

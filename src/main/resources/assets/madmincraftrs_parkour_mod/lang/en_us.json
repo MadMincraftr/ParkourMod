@@ -4,5 +4,6 @@
   "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
   "death.attack.antijump": "%1$s wasn\u0027t allowed to jump",
   "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump",
+  "block.madmincraftrs_parkour_mod.speed_block": "Speed Block",
   "block.madmincraftrs_parkour_mod.kill_brick": "Kill Brick"
 }
