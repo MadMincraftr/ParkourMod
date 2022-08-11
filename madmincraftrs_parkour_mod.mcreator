@@ -91,6 +91,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "checkpoint_block"
+    },
+    {
+      "name": "SpeedBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpeedBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_block"
     }
   ],
   "variable_elements": [],
@@ -102,6 +126,7 @@
       "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
       "death.attack.antijump": "%1$s wasn\u0027t allowed to jump",
       "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump",
+      "block.madmincraftrs_parkour_mod.speed_block": "Speed Block",
       "block.madmincraftrs_parkour_mod.kill_brick": "Kill Brick"
     }
   },
@@ -112,10 +137,10 @@
   "workspaceSettings": {
     "modid": "madmincraftrs_parkour_mod",
     "modName": "MadMincraftr\u0027s Parkour Mod",
-    "version": "DEV01",
-    "description": "DEV BUILD 01",
+    "version": "BETA0.5.0",
+    "description": "BETA 1 FOR RELEASE 1.0.0",
     "author": "MadMincraftr",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

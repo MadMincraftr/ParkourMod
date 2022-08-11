@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "madmincraftrs_parkour_mod:blocks/speedblock",
+    "particle": "madmincraftrs_parkour_mod:blocks/speedblock"
+  }
+}

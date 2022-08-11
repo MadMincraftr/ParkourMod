@@ -21,6 +21,8 @@ public class MadmincraftrsParkourModModItems {
 			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
 	public static final RegistryObject<Item> CHECKPOINT_BLOCK = block(MadmincraftrsParkourModModBlocks.CHECKPOINT_BLOCK,
 			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
+	public static final RegistryObject<Item> SPEED_BLOCK = block(MadmincraftrsParkourModModBlocks.SPEED_BLOCK,
+			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
