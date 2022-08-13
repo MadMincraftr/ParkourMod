@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Zero Gravity",
+    "splashName": "Splash Potion of Zero Gravity",
+    "lingeringName": "Lingering Potion of Zero Gravity",
+    "arrowName": "Arrow of Zero Gravity",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:ZeroGravity"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

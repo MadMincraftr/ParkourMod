@@ -27,9 +27,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModTabs;
+import net.mincraftr.parkour.init.MadmincraftrsParkourModModPotions;
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModMobEffects;
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModItems;
 import net.mincraftr.parkour.init.MadmincraftrsParkourModModBlocks;
+import net.mincraftr.parkour.init.MadmincraftrsParkourModModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -50,7 +52,10 @@ public class MadmincraftrsParkourModMod {
 		MadmincraftrsParkourModModBlocks.REGISTRY.register(bus);
 		MadmincraftrsParkourModModItems.REGISTRY.register(bus);
 
+		MadmincraftrsParkourModModBlockEntities.REGISTRY.register(bus);
+
 		MadmincraftrsParkourModModMobEffects.REGISTRY.register(bus);
+		MadmincraftrsParkourModModPotions.REGISTRY.register(bus);
 
 	}
 

@@ -1,0 +1,100 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 100,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Speed Boost",
+          "name": "SpeedToggle",
+          "x": 78,
+          "y": 80
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Speed Boost Level",
+          "width": 120,
+          "height": 20,
+          "name": "SpeedAmount",
+          "x": 78,
+          "y": 107
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Jump Boost",
+          "name": "JumpToggle",
+          "x": 267,
+          "y": 80
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Jump Boost Amount",
+          "width": 120,
+          "height": 20,
+          "name": "JumpAmount",
+          "x": 231,
+          "y": 107
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Speed Ticks",
+          "width": 120,
+          "height": 20,
+          "name": "SpeedTime",
+          "x": 78,
+          "y": 134
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Jump Ticks",
+          "width": 120,
+          "height": 20,
+          "name": "JumpTime",
+          "x": 231,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "[ THIS GUI IS BROKEN ); ]",
+          "color": {
+            "value": -1163714,
+            "falpha": 0.0
+          },
+          "name": "[ THIS GUI IS BROKEN ); ]",
+          "x": 141,
+          "y": 179
+        }
+      }
+    ],
+    "onTick": {
+      "name": "SuperBlockConfigOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

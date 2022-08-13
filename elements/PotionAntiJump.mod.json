@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Anti Jumping Potion",
+    "splashName": "Splash Potion of No Jumping",
+    "lingeringName": "Lingering Potion of Anti Jump",
+    "arrowName": "Arrow of No Jumping",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:AntiJump"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

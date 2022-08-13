@@ -23,6 +23,15 @@ public class MadmincraftrsParkourModModItems {
 			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
 	public static final RegistryObject<Item> SPEED_BLOCK = block(MadmincraftrsParkourModModBlocks.SPEED_BLOCK,
 			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
+	public static final RegistryObject<Item> FRICTION_BLOCK = block(MadmincraftrsParkourModModBlocks.FRICTION_BLOCK,
+			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
+	public static final RegistryObject<Item> SUPER_BLOCK = block(MadmincraftrsParkourModModBlocks.SUPER_BLOCK, null);
+	public static final RegistryObject<Item> JUMP_BLOCK = block(MadmincraftrsParkourModModBlocks.JUMP_BLOCK,
+			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
+	public static final RegistryObject<Item> DAMAGE_BRICK = block(MadmincraftrsParkourModModBlocks.DAMAGE_BRICK,
+			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
+	public static final RegistryObject<Item> SUPER_BLOCK_2 = block(MadmincraftrsParkourModModBlocks.SUPER_BLOCK_2,
+			MadmincraftrsParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

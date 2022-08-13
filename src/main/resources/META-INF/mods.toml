@@ -4,14 +4,14 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="madmincraftrs_parkour_mod"
-version="0.5.0"
+version="1.0.0"
 displayName="MadMincraftr's Parkour Mod"
 credits="Mod made with the tool MCreator."
 displayURL="https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod"
 logoFile="logo.png"
 authors="MadMincraftr"
 description='''
-BETA 1 FOR RELEASE 1.0.0
+R1.0.0 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.
 '''
 
 [[dependencies.madmincraftrs_parkour_mod]]

@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Zero Gravity",
+    "icon": "zerogravityicon.png",
+    "color": {
+      "value": -4325121,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ZeroGravityEffectStarted"
+    },
+    "onExpired": {
+      "name": "ZeroGravityEffectExpires"
+    }
+  }
+}

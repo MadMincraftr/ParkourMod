@@ -68,13 +68,13 @@
     "offsetType": "NONE",
     "aiPathNodeType": "DANGER_OTHER",
     "beaconColorModifier": {
-      "value": -1108715,
+      "value": -65536,
       "falpha": 0.0
     },
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.1,
+    "slipperiness": 1.0,
     "speedFactor": 0.0,
     "jumpFactor": 0.0,
     "reactionToPushing": "BLOCK",
@@ -98,7 +98,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 4,
     "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": true,

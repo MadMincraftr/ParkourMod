@@ -1,6 +1,8 @@
 
 package net.mincraftr.parkour.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -32,13 +34,13 @@ import java.util.Collections;
 
 public class KillBrickBlock extends Block {
 	public KillBrickBlock() {
-		super(BlockBehaviour.Properties.of(Material.BARRIER, MaterialColor.COLOR_RED).sound(SoundType.METAL).strength(-1, 3600000).friction(0.1f)
-				.speedFactor(0f).jumpFactor(0f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.BARRIER, MaterialColor.COLOR_RED).sound(SoundType.METAL).strength(-1, 3600000).lightLevel(s -> 4)
+				.friction(1f).speedFactor(0f).jumpFactor(0f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
 	public float[] getBeaconColorMultiplier(BlockState state, LevelReader world, BlockPos pos, BlockPos beaconPos) {
-		return new float[]{0.937254901961f, 0.082352941176f, 0.082352941176f};
+		return new float[]{1f, 0f, 0f};
 	}
 
 	@Override
@@ -86,12 +88,12 @@ public class KillBrickBlock extends Block {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		KillBrickEntityCollidesInTheBlockProcedure.execute(entity);
+		KillBrickEntityCollidesInTheBlockProcedure.execute(world, entity);
 	}
 
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		KillBrickEntityCollidesInTheBlockProcedure.execute(entity);
+		KillBrickEntityCollidesInTheBlockProcedure.execute(world, entity);
 	}
 }
