@@ -556,8 +556,8 @@
   "workspaceSettings": {
     "modid": "madmincraftrs_parkour_mod",
     "modName": "MadMincraftr\u0027s Parkour Mod",
-    "version": "RELEASE1.0.0",
-    "description": "R1.0.0 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
+    "version": "RELEASE1.1.0",
+    "description": "R1.1.0 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
     "author": "MadMincraftr",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod",
     "license": "Academic Free License v3.0",
