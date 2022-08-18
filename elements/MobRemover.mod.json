@@ -1,0 +1,30 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "mobremovesword",
+    "customModelName": "Normal",
+    "name": "Mob Remover",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MadMincraftrParkour"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 999.0,
+    "attackSpeed": 100.0,
+    "enchantability": 1,
+    "damageVsEntity": 0.0,
+    "usageCount": 999,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "MobRemoverAction"
+    }
+  }
+}

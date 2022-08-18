@@ -66,7 +66,7 @@
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "DANGER_OTHER",
+    "aiPathNodeType": "LAVA",
     "beaconColorModifier": {
       "value": -65536,
       "falpha": 0.0
@@ -74,7 +74,7 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 1.0,
+    "slipperiness": 0.6075,
     "speedFactor": 0.0,
     "jumpFactor": 0.0,
     "reactionToPushing": "BLOCK",

@@ -1,0 +1,60 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Procedure Name",
+          "width": 120,
+          "height": 20,
+          "name": "code",
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Debug Gui (Run Code)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Debug Gui (Run Code)",
+          "x": 159,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Run",
+          "onClick": {
+            "name": "DebugRunCode"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Run",
+          "x": 249,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

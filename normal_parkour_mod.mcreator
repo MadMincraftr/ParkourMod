@@ -1,0 +1,984 @@
+{
+  "mod_elements": [
+    {
+      "name": "MadMincraftrParkour",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mad_mincraftr_parkour"
+    },
+    {
+      "name": "KillBrick",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_brick"
+    },
+    {
+      "name": "KillBrickEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_brick_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntiJump",
+      "type": "potioneffect",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_jump"
+    },
+    {
+      "name": "JumpCheck",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckpointTrigger",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckpointBlock",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint_block"
+    },
+    {
+      "name": "SpeedBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpeedBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_block"
+    },
+    {
+      "name": "PotionAntiJump",
+      "type": "potion",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_anti_jump"
+    },
+    {
+      "name": "ToggleBuild",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_build",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BuildModeToggle",
+      "type": "command",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "build_mode_toggle"
+    },
+    {
+      "name": "FrictionBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friction_block"
+    },
+    {
+      "name": "SuperBlockConfig",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_config"
+    },
+    {
+      "name": "SuperBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuperBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SuperBlock",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block"
+    },
+    {
+      "name": "ZeroGravity",
+      "type": "potioneffect",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity"
+    },
+    {
+      "name": "BuildToggleKey",
+      "type": "keybind",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "build_toggle_key"
+    },
+    {
+      "name": "JumpBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JumpBlock",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_block"
+    },
+    {
+      "name": "DamageBrick_EntityWalk",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_brick_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DamageBrick",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_brick"
+    },
+    {
+      "name": "ZeroGravityEffectStarted",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_effect_started",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZeroGravityEffectExpires",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZeroGravityPotion",
+      "type": "potion",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_potion"
+    },
+    {
+      "name": "SuperBlock2_EntityWalk",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_2_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuperBlock2",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_2"
+    },
+    {
+      "name": "FrictionBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friction_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuperBlockRightClicked",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DamageDetect",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fall_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "distance",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JumpCheck2",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_check_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuperBlockConfigOpenTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_config_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EffectBlockGui",
+      "type": "gui",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_block_gui"
+    },
+    {
+      "name": "EffectBlock",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_block"
+    },
+    {
+      "name": "EffectBlockGuiSave",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_block_gui_save",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuperBlockConfigSave",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_block_config_save",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PortalCheck",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MobRemoverAction",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_remover_action",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MobRemover",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_remover"
+    },
+    {
+      "name": "EffectBlockGuiLoad",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_block_gui_load",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EffectBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EffectBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effect_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FrictionStairs",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friction_stairs"
+    },
+    {
+      "name": "ZeroGBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_g_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZeroGravityBlock",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_block"
+    },
+    {
+      "name": "AntiJumpBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_jump_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearBlock",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_block"
+    },
+    {
+      "name": "AntiJumpBlock",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_jump_block"
+    },
+    {
+      "name": "DebugBlock",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_block"
+    },
+    {
+      "name": "DebugGuiRuncode",
+      "type": "gui",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_gui_runcode"
+    },
+    {
+      "name": "DebugRunCode",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_run_code",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          },
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "CustomBlockX",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "CustomBlockY",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "CustomBlockZ",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "PortalCheck",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.madmincraftrs_parkour_mod.friction_stairs": "Friction Block Stairs",
+      "death.attack.killbrick": "%1$s stepped on a kill brick",
+      "block.normal_parkour_mod.jump_block": "Jump Block",
+      "item.madmincraftrs_parkour_mod.mob_remover": "Mob Remover",
+      "death.attack.antijump.player": "%1$s was forced upwards by %2$s while they had the anti jump effect",
+      "item.minecraft.lingering_potion.effect.zero_gravity_potion": "Lingering Potion of Zero Gravity",
+      "death.attack.killbrick.fall.player": "%2$s pushed %1$s off a block, and they landed on a kill brick",
+      "block.normal_parkour_mod.friction_block": "Friction Block",
+      "block.madmincraftrs_parkour_mod.zero_gravity_block": "Zero Gravity Block",
+      "block.normal_parkour_mod.clear_block": "Clear Block",
+      "effect.madmincraftrs_parkour_mod.zero_gravity": "Zero Gravity",
+      "block.madmincraftrs_parkour_mod.anti_jump_block": "Anti Jump Block",
+      "death.attack.killbrick.head.player": "%2$s forced %1$s upwards into a kill brick",
+      "death.attack.killbrick.portal.player": "%1$s went through a portal and stepped on a killbrick while running from %2$s",
+      "block.normal_parkour_mod.super_block_2": "Super Block",
+      "key.categories.parkour": "MadMincraftr\u0027s Parkour Mod",
+      "death.attack.antijump": "%1$s wasn\u0027t allowed to jump",
+      "effect.normal_parkour_mod.anti_jump": "Anti Jump",
+      "block.madmincraftrs_parkour_mod.damage_brick": "Damage Brick",
+      "block.normal_parkour_mod.checkpoint_block": "Checkpoint Block",
+      "block.madmincraftrs_parkour_mod.debug_block": "Debug Block",
+      "death.attack.killbrick.head": "%1$s hit their head on a kill brick",
+      "item.minecraft.tipped_arrow.effect.zero_gravity_potion": "Arrow of Zero Gravity",
+      "block.madmincraftrs_parkour_mod.checkpoint_block": "Checkpoint Block",
+      "item.minecraft.lingering_potion.effect.potion_anti_jump": "Lingering Potion of Anti Jump",
+      "block.normal_parkour_mod.kill_brick": "Kill Brick",
+      "effect.normal_parkour_mod.zero_gravity": "Zero Gravity",
+      "block.normal_parkour_mod.debug_block": "Debug Block",
+      "key.madmincraftrs_parkour_mod.build_toggle_key": "Build Toggle Key",
+      "item.minecraft.potion.effect.zero_gravity_potion": "Potion of Zero Gravity",
+      "block.normal_parkour_mod.speed_block": "Speed Block",
+      "item.minecraft.splash_potion.effect.zero_gravity_potion": "Splash Potion of Zero Gravity",
+      "item.normal_parkour_mod.mob_remover": "Mob Remover",
+      "block.normal_parkour_mod.anti_jump_block": "Anti Jump Block",
+      "key.normal_parkour_mod.build_toggle_key": "Build Toggle Key",
+      "death.attack.killbrick.fall": "%1$s fell and landed on a kill brick",
+      "block.madmincraftrs_parkour_mod.friction_block": "Friction Block",
+      "item.minecraft.tipped_arrow.effect.potion_anti_jump": "Arrow of No Jumping",
+      "death.attack.fall.killbrick": "%1$s fell into a kill brick",
+      "death.attack.damagebrick.player": "%1$s was forced into a damage brick by %2$s",
+      "item.minecraft.splash_potion.effect.potion_anti_jump": "Splash Potion of No Jumping",
+      "item.minecraft.potion.effect.potion_anti_jump": "Anti Jumping Potion",
+      "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
+      "death.attack.killbrick.portal": "%1$s went through a portal and stepped on a killbrick",
+      "death.attack.mobremover": "This message shouldn\u0027t happen. Try to recreate this on video and send it to me in the comment section on the mod\u0027s curseforge page",
+      "block.normal_parkour_mod.zero_gravity_block": "Zero Gravity Block",
+      "death.attack.killbrick.player": "%2$s pushed %1$s into a kill brick",
+      "block.madmincraftrs_parkour_mod.speed_block": "Speed Block",
+      "block.madmincraftrs_parkour_mod.effect_block": "Effect Block",
+      "block.madmincraftrs_parkour_mod.super_block_2": "Super Block",
+      "death.attack.mobremover.player": "%1$s was removed by %1$s",
+      "block.madmincraftrs_parkour_mod.clear_block": "Clear Block",
+      "block.normal_parkour_mod.effect_block": "Effect Block",
+      "block.normal_parkour_mod.friction_stairs": "Friction Block Stairs",
+      "block.madmincraftrs_parkour_mod.kill_brick": "Kill Brick",
+      "death.attack.damagebrick": "%1$s stepped on too many damage bricks",
+      "block.madmincraftrs_parkour_mod.jump_block": "Jump Block",
+      "block.normal_parkour_mod.super_block": "Custom Block",
+      "block.madmincraftrs_parkour_mod.super_block": "Custom Block",
+      "block.normal_parkour_mod.damage_brick": "Damage Brick",
+      "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "normal_parkour_mod",
+    "modName": "Normal Parkour",
+    "version": "RELEASE1.2.1",
+    "description": "RELEASE 1.2.1 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
+    "author": "MadMincraftr",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "modicon2",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Mod made with the tool MCreator.",
+    "modElementsPackage": "net.mincraftr.normal_parkour",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "normal_parkour_mod:blocks/frictionblock",
+    "particle": "normal_parkour_mod:blocks/frictionblock"
+  }
+}

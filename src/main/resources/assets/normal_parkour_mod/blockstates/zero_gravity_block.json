@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "normal_parkour_mod:block/zero_gravity_block"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 150,
+    "height": 130,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": -18,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Effect Block",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Effect Block",
+          "x": 182,
+          "y": 61
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Effect ID",
+          "width": 120,
+          "height": 20,
+          "name": "effect",
+          "x": 155,
+          "y": 78
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Effect level",
+          "width": 120,
+          "height": 20,
+          "name": "amount",
+          "x": 155,
+          "y": 117
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Effect duration (Seconds)",
+          "width": 120,
+          "height": 20,
+          "name": "ticks",
+          "x": 155,
+          "y": 155
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "EffectBlockGuiLoad"
+    },
+    "onClosed": {
+      "name": "EffectBlockGuiSave"
+    },
+    "gridSettings": {
+      "sx": 11,
+      "sy": 11,
+      "ox": 11,
+      "oy": 1,
+      "snapOnGrid": true
+    }
+  }
+}

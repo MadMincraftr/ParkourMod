@@ -82,18 +82,31 @@
           },
           "name": "[ THIS GUI IS BROKEN ); ]",
           "x": 141,
-          "y": 179
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Custom Block",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Custom Block",
+          "x": 181,
+          "y": 81
         }
       }
     ],
-    "onTick": {
-      "name": "SuperBlockConfigOpenTick"
+    "onClosed": {
+      "name": "SuperBlockConfigSave"
     },
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
-      "ox": 11,
-      "oy": 15,
+      "sx": 10,
+      "sy": 10,
+      "ox": 10,
+      "oy": 10,
       "snapOnGrid": true
     }
   }

@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ICE"
+      "value": "BARRIER"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -95,7 +95,7 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {

@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "normal_parkour_mod:blocks/frictionblock",
+    "top": "normal_parkour_mod:blocks/frictionblock",
+    "side": "normal_parkour_mod:blocks/frictionblock"
+  }
+}
