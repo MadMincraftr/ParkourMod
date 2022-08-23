@@ -19,4 +19,6 @@ public class NormalParkourModModPotions {
 			() -> new Potion(new MobEffectInstance(NormalParkourModModMobEffects.ANTI_JUMP.get(), 3600, 0, false, true)));
 	public static final RegistryObject<Potion> ZERO_GRAVITY_POTION = REGISTRY.register("zero_gravity_potion",
 			() -> new Potion(new MobEffectInstance(NormalParkourModModMobEffects.ZERO_GRAVITY.get(), 3600, 0, false, true)));
+	public static final RegistryObject<Potion> PAUSE = REGISTRY.register("pause",
+			() -> new Potion(new MobEffectInstance(NormalParkourModModMobEffects.PAUSE_EFFECT.get(), 200, 0, false, true)));
 }

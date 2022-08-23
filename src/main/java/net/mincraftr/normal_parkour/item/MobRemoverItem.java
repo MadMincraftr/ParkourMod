@@ -40,7 +40,7 @@ public class MobRemoverItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, 96f, new Item.Properties().tab(NormalParkourModModTabs.TAB_MAD_MINCRAFTR_PARKOUR).fireResistant());
+		}, 3, 96f, new Item.Properties().tab(NormalParkourModModTabs.TAB_NORMAL_PARKOUR_TAB).fireResistant());
 	}
 
 	@Override

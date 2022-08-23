@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "normal_parkour_mod:block/ramp"
+    },
+    "facing=east": {
+      "model": "normal_parkour_mod:block/ramp",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "normal_parkour_mod:block/ramp",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "normal_parkour_mod:block/ramp",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "normal_parkour_mod:block/ramp",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "normal_parkour_mod:block/ramp",
+      "x": 90
+    }
+  }
+}

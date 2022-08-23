@@ -1,0 +1,49 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 80,
+    "height": 75,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "You Win!",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "You Win!",
+          "x": 193,
+          "y": 88
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Okay!",
+          "onClick": {
+            "name": "WinScreenOkayButton"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Okay!",
+          "x": 188,
+          "y": 133
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 5,
+      "sy": 5,
+      "ox": 5,
+      "oy": 5,
+      "snapOnGrid": true
+    }
+  }
+}

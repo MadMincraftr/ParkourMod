@@ -6,7 +6,7 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mad_mincraftr_parkour"
+      "registry_name": "normal_parkour_tab"
     },
     {
       "name": "KillBrick",
@@ -862,6 +862,190 @@
           }
         ]
       }
+    },
+    {
+      "name": "BrickProtection",
+      "type": "enchantment",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_protection"
+    },
+    {
+      "name": "BrickProtectionCheck",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_protection_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PauseEffect",
+      "type": "potioneffect",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_effect"
+    },
+    {
+      "name": "PauseEffectStarted",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_effect_started",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PauseEffectExpires",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pause",
+      "type": "potion",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pause"
+    },
+    {
+      "name": "SlowBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slow_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SlowBlock",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slow_block"
+    },
+    {
+      "name": "WinScreen",
+      "type": "gui",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "win_screen"
+    },
+    {
+      "name": "WinScreenOkayButton",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "win_screen_okay_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WinBlock_EntityWalk",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "win_block_entity_walk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WinBlock",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "win_block"
+    },
+    {
+      "name": "Ramp",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ramp"
     }
   ],
   "variable_elements": [
@@ -888,6 +1072,24 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "HasBrickProtection",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "DidWin",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "DidStepOnWinBlock",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -901,19 +1103,24 @@
       "item.minecraft.lingering_potion.effect.zero_gravity_potion": "Lingering Potion of Zero Gravity",
       "death.attack.killbrick.fall.player": "%2$s pushed %1$s off a block, and they landed on a kill brick",
       "block.normal_parkour_mod.friction_block": "Friction Block",
+      "item.minecraft.lingering_potion.effect.pause": "Lingering Potion of Pausing",
       "block.madmincraftrs_parkour_mod.zero_gravity_block": "Zero Gravity Block",
       "block.normal_parkour_mod.clear_block": "Clear Block",
       "effect.madmincraftrs_parkour_mod.zero_gravity": "Zero Gravity",
       "block.madmincraftrs_parkour_mod.anti_jump_block": "Anti Jump Block",
+      "item.minecraft.potion.effect.pause": "Pause Potion",
       "death.attack.killbrick.head.player": "%2$s forced %1$s upwards into a kill brick",
       "death.attack.killbrick.portal.player": "%1$s went through a portal and stepped on a killbrick while running from %2$s",
       "block.normal_parkour_mod.super_block_2": "Super Block",
       "key.categories.parkour": "MadMincraftr\u0027s Parkour Mod",
       "death.attack.antijump": "%1$s wasn\u0027t allowed to jump",
       "effect.normal_parkour_mod.anti_jump": "Anti Jump",
+      "item.minecraft.tipped_arrow.effect.pause": "Pause Arrow",
       "block.madmincraftrs_parkour_mod.damage_brick": "Damage Brick",
+      "block.normal_parkour_mod.win_block": "Win Block",
       "block.normal_parkour_mod.checkpoint_block": "Checkpoint Block",
       "block.madmincraftrs_parkour_mod.debug_block": "Debug Block",
+      "itemGroup.tabnormal_parkour_tab": "Normal Parkour",
       "death.attack.killbrick.head": "%1$s hit their head on a kill brick",
       "item.minecraft.tipped_arrow.effect.zero_gravity_potion": "Arrow of Zero Gravity",
       "block.madmincraftrs_parkour_mod.checkpoint_block": "Checkpoint Block",
@@ -935,8 +1142,8 @@
       "death.attack.damagebrick.player": "%1$s was forced into a damage brick by %2$s",
       "item.minecraft.splash_potion.effect.potion_anti_jump": "Splash Potion of No Jumping",
       "item.minecraft.potion.effect.potion_anti_jump": "Anti Jumping Potion",
-      "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
       "death.attack.killbrick.portal": "%1$s went through a portal and stepped on a killbrick",
+      "itemGroup.tabmad_mincraftr_parkour": "Normal Parkour",
       "death.attack.mobremover": "This message shouldn\u0027t happen. Try to recreate this on video and send it to me in the comment section on the mod\u0027s curseforge page",
       "block.normal_parkour_mod.zero_gravity_block": "Zero Gravity Block",
       "death.attack.killbrick.player": "%2$s pushed %1$s into a kill brick",
@@ -945,6 +1152,8 @@
       "block.madmincraftrs_parkour_mod.super_block_2": "Super Block",
       "death.attack.mobremover.player": "%1$s was removed by %1$s",
       "block.madmincraftrs_parkour_mod.clear_block": "Clear Block",
+      "block.normal_parkour_mod.ramp": "Ramp (Bugged)",
+      "effect.normal_parkour_mod.pause_effect": "Pause",
       "block.normal_parkour_mod.effect_block": "Effect Block",
       "block.normal_parkour_mod.friction_stairs": "Friction Block Stairs",
       "block.madmincraftrs_parkour_mod.kill_brick": "Kill Brick",
@@ -953,7 +1162,10 @@
       "block.normal_parkour_mod.super_block": "Custom Block",
       "block.madmincraftrs_parkour_mod.super_block": "Custom Block",
       "block.normal_parkour_mod.damage_brick": "Damage Brick",
-      "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump"
+      "item.minecraft.splash_potion.effect.pause": "Splash Potion of Pausing",
+      "enchantment.normal_parkour_mod.brick_protection": "Brick Protection",
+      "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump",
+      "block.normal_parkour_mod.slow_block": "Slow Block"
     }
   },
   "foldersRoot": {
@@ -963,9 +1175,9 @@
   "workspaceSettings": {
     "modid": "normal_parkour_mod",
     "modName": "Normal Parkour",
-    "version": "RELEASE1.2.1",
-    "description": "RELEASE 1.2.1 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
-    "author": "MadMincraftr",
+    "version": "RELEASE1.3.0",
+    "description": "RELEASE 1.3.0 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
+    "author": "MadMincraftr, SpeakaSlaysu",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,

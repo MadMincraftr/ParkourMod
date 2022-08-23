@@ -77,6 +77,9 @@ public class NormalParkourModModVariables {
 				clone.CustomBlockY = original.CustomBlockY;
 				clone.CustomBlockZ = original.CustomBlockZ;
 				clone.PortalCheck = original.PortalCheck;
+				clone.HasBrickProtection = original.HasBrickProtection;
+				clone.DidWin = original.DidWin;
+				clone.DidStepOnWinBlock = original.DidStepOnWinBlock;
 			}
 		}
 	}
@@ -116,6 +119,9 @@ public class NormalParkourModModVariables {
 		public double CustomBlockY = 0;
 		public double CustomBlockZ = 0;
 		public boolean PortalCheck = false;
+		public boolean HasBrickProtection = false;
+		public boolean DidWin = false;
+		public boolean DidStepOnWinBlock = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,6 +134,9 @@ public class NormalParkourModModVariables {
 			nbt.putDouble("CustomBlockY", CustomBlockY);
 			nbt.putDouble("CustomBlockZ", CustomBlockZ);
 			nbt.putBoolean("PortalCheck", PortalCheck);
+			nbt.putBoolean("HasBrickProtection", HasBrickProtection);
+			nbt.putBoolean("DidWin", DidWin);
+			nbt.putBoolean("DidStepOnWinBlock", DidStepOnWinBlock);
 			return nbt;
 		}
 
@@ -137,6 +146,9 @@ public class NormalParkourModModVariables {
 			CustomBlockY = nbt.getDouble("CustomBlockY");
 			CustomBlockZ = nbt.getDouble("CustomBlockZ");
 			PortalCheck = nbt.getBoolean("PortalCheck");
+			HasBrickProtection = nbt.getBoolean("HasBrickProtection");
+			DidWin = nbt.getBoolean("DidWin");
+			DidStepOnWinBlock = nbt.getBoolean("DidStepOnWinBlock");
 		}
 	}
 
@@ -166,6 +178,9 @@ public class NormalParkourModModVariables {
 					variables.CustomBlockY = message.data.CustomBlockY;
 					variables.CustomBlockZ = message.data.CustomBlockZ;
 					variables.PortalCheck = message.data.PortalCheck;
+					variables.HasBrickProtection = message.data.HasBrickProtection;
+					variables.DidWin = message.data.DidWin;
+					variables.DidStepOnWinBlock = message.data.DidStepOnWinBlock;
 				}
 			});
 			context.setPacketHandled(true);

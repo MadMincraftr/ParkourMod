@@ -11,6 +11,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.core.BlockPos;
 
+import net.mincraftr.normal_parkour.network.NormalParkourModModVariables;
 import net.mincraftr.normal_parkour.init.NormalParkourModModBlocks;
 
 import javax.annotation.Nullable;
@@ -32,9 +33,12 @@ public class DamageDetectProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, double distance) {
 		if (entity == null)
 			return;
-		if (distance >= 3.3 && NormalParkourModModBlocks.KILL_BRICK.get() == (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock()) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.hurt(new DamageSource("killbrick.fall").bypassArmor(), 999999);
+		if (!(entity.getCapability(NormalParkourModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new NormalParkourModModVariables.PlayerVariables())).HasBrickProtection) {
+			if (distance >= 3.3 && NormalParkourModModBlocks.KILL_BRICK.get() == (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock()) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.hurt(new DamageSource("killbrick.fall").bypassArmor(), 999999);
+			}
 		}
 	}
 }

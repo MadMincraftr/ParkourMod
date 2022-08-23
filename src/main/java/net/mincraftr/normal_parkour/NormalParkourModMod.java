@@ -30,6 +30,7 @@ import net.mincraftr.normal_parkour.init.NormalParkourModModTabs;
 import net.mincraftr.normal_parkour.init.NormalParkourModModPotions;
 import net.mincraftr.normal_parkour.init.NormalParkourModModMobEffects;
 import net.mincraftr.normal_parkour.init.NormalParkourModModItems;
+import net.mincraftr.normal_parkour.init.NormalParkourModModEnchantments;
 import net.mincraftr.normal_parkour.init.NormalParkourModModBlocks;
 import net.mincraftr.normal_parkour.init.NormalParkourModModBlockEntities;
 
@@ -54,6 +55,7 @@ public class NormalParkourModMod {
 
 		NormalParkourModModBlockEntities.REGISTRY.register(bus);
 
+		NormalParkourModModEnchantments.REGISTRY.register(bus);
 		NormalParkourModModMobEffects.REGISTRY.register(bus);
 		NormalParkourModModPotions.REGISTRY.register(bus);
 

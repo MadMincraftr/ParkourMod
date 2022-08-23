@@ -15,37 +15,40 @@ public class KillBrickEntityCollidesInTheBlockProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
+		if (!(entity.getCapability(NormalParkourModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new NormalParkourModModVariables.PlayerVariables())).HasBrickProtection) {
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
 
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
 				}
-			}
 
-			private void run() {
-				if ((entity.getCapability(NormalParkourModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new NormalParkourModModVariables.PlayerVariables())).PortalCheck) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.hurt(new DamageSource("killbrick.portal").bypassArmor(), 99999);
-				} else {
-					if (entity instanceof LivingEntity _entity)
-						_entity.hurt(new DamageSource("killbrick").bypassArmor(), 99999);
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
 				}
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 3);
+
+				private void run() {
+					if ((entity.getCapability(NormalParkourModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new NormalParkourModModVariables.PlayerVariables())).PortalCheck) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.hurt(new DamageSource("killbrick.portal").bypassArmor(), 99999);
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.hurt(new DamageSource("killbrick").bypassArmor(), 99999);
+					}
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 3);
+		}
 	}
 }

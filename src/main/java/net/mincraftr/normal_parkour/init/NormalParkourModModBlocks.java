@@ -15,9 +15,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mincraftr.normal_parkour.block.ZeroGravityBlockBlock;
+import net.mincraftr.normal_parkour.block.WinBlockBlock;
 import net.mincraftr.normal_parkour.block.SuperBlockBlock;
 import net.mincraftr.normal_parkour.block.SuperBlock2Block;
 import net.mincraftr.normal_parkour.block.SpeedBlockBlock;
+import net.mincraftr.normal_parkour.block.SlowBlockBlock;
+import net.mincraftr.normal_parkour.block.RampBlock;
 import net.mincraftr.normal_parkour.block.KillBrickBlock;
 import net.mincraftr.normal_parkour.block.JumpBlockBlock;
 import net.mincraftr.normal_parkour.block.FrictionStairsBlock;
@@ -46,6 +49,9 @@ public class NormalParkourModModBlocks {
 	public static final RegistryObject<Block> ANTI_JUMP_BLOCK = REGISTRY.register("anti_jump_block", () -> new AntiJumpBlockBlock());
 	public static final RegistryObject<Block> CLEAR_BLOCK = REGISTRY.register("clear_block", () -> new ClearBlockBlock());
 	public static final RegistryObject<Block> DEBUG_BLOCK = REGISTRY.register("debug_block", () -> new DebugBlockBlock());
+	public static final RegistryObject<Block> SLOW_BLOCK = REGISTRY.register("slow_block", () -> new SlowBlockBlock());
+	public static final RegistryObject<Block> WIN_BLOCK = REGISTRY.register("win_block", () -> new WinBlockBlock());
+	public static final RegistryObject<Block> RAMP = REGISTRY.register("ramp", () -> new RampBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -53,6 +59,7 @@ public class NormalParkourModModBlocks {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			SpeedBlockBlock.registerRenderLayer();
 			SuperBlockBlock.registerRenderLayer();
+			RampBlock.registerRenderLayer();
 		}
 	}
 }

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mincraftr.normal_parkour.client.gui.WinScreenScreen;
 import net.mincraftr.normal_parkour.client.gui.SuperBlockConfigScreen;
 import net.mincraftr.normal_parkour.client.gui.EffectBlockGuiScreen;
 import net.mincraftr.normal_parkour.client.gui.DebugGuiRuncodeScreen;
@@ -23,6 +24,7 @@ public class NormalParkourModModScreens {
 			MenuScreens.register(NormalParkourModModMenus.SUPER_BLOCK_CONFIG, SuperBlockConfigScreen::new);
 			MenuScreens.register(NormalParkourModModMenus.EFFECT_BLOCK_GUI, EffectBlockGuiScreen::new);
 			MenuScreens.register(NormalParkourModModMenus.DEBUG_GUI_RUNCODE, DebugGuiRuncodeScreen::new);
+			MenuScreens.register(NormalParkourModModMenus.WIN_SCREEN, WinScreenScreen::new);
 		});
 	}
 }

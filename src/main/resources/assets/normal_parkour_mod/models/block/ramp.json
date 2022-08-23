@@ -1,0 +1,8 @@
+{
+  "parent": "normal_parkour_mod:custom/iceramp",
+  "textures": {
+    "all": "normal_parkour_mod:blocks/texture",
+    "particle": "normal_parkour_mod:blocks/texture",
+    "0": "normal_parkour_mod:blocks/texture"
+  }
+}
