@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "normal_parkour_mod:textures/advrootbg.png",
+    "icon": {
+      "item": "normal_parkour_mod:checkpoint_block"
+    },
+    "title": {
+      "translate": "advancements.parkour_adv_root.title"
+    },
+    "description": {
+      "translate": "advancements.parkour_adv_root.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "parkour_adv_root": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 35
+  }
+}

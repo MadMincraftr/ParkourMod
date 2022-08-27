@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:MadMincraftrParkour"
+      "value": "CUSTOM:NormalParkourTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -121,9 +121,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityWalksOn": {
-      "name": "ClearBlock_EntityWalk"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

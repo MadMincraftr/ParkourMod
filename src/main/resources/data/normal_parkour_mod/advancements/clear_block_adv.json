@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "normal_parkour_mod:clear_block"
+    },
+    "title": {
+      "translate": "advancements.clear_block_adv.title"
+    },
+    "description": {
+      "translate": "advancements.clear_block_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "clear_block_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "normal_parkour_mod:parkour_adv_root"
+}

@@ -1,17 +1,9 @@
 {
   "mod_elements": [
     {
-      "name": "MadMincraftrParkour",
-      "type": "tab",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "normal_parkour_tab"
-    },
-    {
       "name": "KillBrick",
       "type": "block",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kill_brick"
@@ -19,7 +11,7 @@
     {
       "name": "KillBrickEntityCollidesInTheBlock",
       "type": "procedure",
-      "sortid": 3,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kill_brick_entity_collides_in_the_block",
@@ -39,7 +31,7 @@
     {
       "name": "AntiJump",
       "type": "potioneffect",
-      "sortid": 4,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "anti_jump"
@@ -47,7 +39,7 @@
     {
       "name": "JumpCheck",
       "type": "procedure",
-      "sortid": 5,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jump_check",
@@ -63,7 +55,7 @@
     {
       "name": "CheckpointTrigger",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "checkpoint_trigger",
@@ -91,7 +83,7 @@
     {
       "name": "CheckpointBlock",
       "type": "block",
-      "sortid": 6,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "checkpoint_block"
@@ -99,7 +91,7 @@
     {
       "name": "SpeedBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 7,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "speed_block_entity_walk",
@@ -115,7 +107,7 @@
     {
       "name": "SpeedBlock",
       "type": "block",
-      "sortid": 7,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "speed_block"
@@ -123,7 +115,7 @@
     {
       "name": "PotionAntiJump",
       "type": "potion",
-      "sortid": 8,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "potion_anti_jump"
@@ -131,7 +123,7 @@
     {
       "name": "ToggleBuild",
       "type": "procedure",
-      "sortid": 9,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "toggle_build",
@@ -147,7 +139,7 @@
     {
       "name": "BuildModeToggle",
       "type": "command",
-      "sortid": 9,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "build_mode_toggle"
@@ -155,7 +147,7 @@
     {
       "name": "FrictionBlock",
       "type": "block",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "friction_block"
@@ -163,7 +155,7 @@
     {
       "name": "SuperBlockConfig",
       "type": "gui",
-      "sortid": 10,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_config"
@@ -171,7 +163,7 @@
     {
       "name": "SuperBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 11,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_entity_walk",
@@ -203,7 +195,7 @@
     {
       "name": "SuperBlockEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 12,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_entity_walks_on_the_block",
@@ -214,7 +206,7 @@
     {
       "name": "SuperBlock",
       "type": "block",
-      "sortid": 11,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block"
@@ -222,7 +214,7 @@
     {
       "name": "ZeroGravity",
       "type": "potioneffect",
-      "sortid": 13,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zero_gravity"
@@ -230,7 +222,7 @@
     {
       "name": "BuildToggleKey",
       "type": "keybind",
-      "sortid": 14,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "build_toggle_key"
@@ -238,7 +230,7 @@
     {
       "name": "JumpBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jump_block_entity_walk",
@@ -254,7 +246,7 @@
     {
       "name": "JumpBlock",
       "type": "block",
-      "sortid": 15,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jump_block"
@@ -262,7 +254,7 @@
     {
       "name": "DamageBrick_EntityWalk",
       "type": "procedure",
-      "sortid": 16,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "damage_brick_entity_walk",
@@ -278,7 +270,7 @@
     {
       "name": "DamageBrick",
       "type": "block",
-      "sortid": 16,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "damage_brick"
@@ -286,7 +278,7 @@
     {
       "name": "ZeroGravityEffectStarted",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zero_gravity_effect_started",
@@ -302,7 +294,7 @@
     {
       "name": "ZeroGravityEffectExpires",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zero_gravity_effect_expires",
@@ -318,7 +310,7 @@
     {
       "name": "ZeroGravityPotion",
       "type": "potion",
-      "sortid": 18,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zero_gravity_potion"
@@ -326,7 +318,7 @@
     {
       "name": "SuperBlock2_EntityWalk",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_2_entity_walk",
@@ -342,7 +334,7 @@
     {
       "name": "SuperBlock2",
       "type": "block",
-      "sortid": 19,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_2"
@@ -350,7 +342,7 @@
     {
       "name": "FrictionBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "friction_block_entity_walk",
@@ -366,7 +358,7 @@
     {
       "name": "SuperBlockRightClicked",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_right_clicked",
@@ -394,7 +386,7 @@
     {
       "name": "DamageDetect",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fall_check",
@@ -430,7 +422,7 @@
     {
       "name": "JumpCheck2",
       "type": "procedure",
-      "sortid": 22,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jump_check_2",
@@ -462,7 +454,7 @@
     {
       "name": "SuperBlockConfigOpenTick",
       "type": "procedure",
-      "sortid": 20,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_config_open_tick",
@@ -494,7 +486,7 @@
     {
       "name": "EffectBlockGui",
       "type": "gui",
-      "sortid": 23,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effect_block_gui"
@@ -502,7 +494,7 @@
     {
       "name": "EffectBlock",
       "type": "block",
-      "sortid": 23,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effect_block"
@@ -510,7 +502,7 @@
     {
       "name": "EffectBlockGuiSave",
       "type": "procedure",
-      "sortid": 24,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effect_block_gui_save",
@@ -534,7 +526,7 @@
     {
       "name": "SuperBlockConfigSave",
       "type": "procedure",
-      "sortid": 25,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_block_config_save",
@@ -558,7 +550,7 @@
     {
       "name": "PortalCheck",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "portal_check",
@@ -578,7 +570,7 @@
     {
       "name": "MobRemoverAction",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mob_remover_action",
@@ -594,7 +586,7 @@
     {
       "name": "MobRemover",
       "type": "tool",
-      "sortid": 27,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mob_remover"
@@ -602,7 +594,7 @@
     {
       "name": "EffectBlockGuiLoad",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effect_block_gui_load",
@@ -626,7 +618,7 @@
     {
       "name": "EffectBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effect_block_entity_walk",
@@ -654,7 +646,7 @@
     {
       "name": "EffectBlockUpdateTick",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "effect_block_update_tick",
@@ -682,7 +674,7 @@
     {
       "name": "FrictionStairs",
       "type": "block",
-      "sortid": 30,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "friction_stairs"
@@ -690,7 +682,7 @@
     {
       "name": "ZeroGBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 31,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zero_g_block_entity_walk",
@@ -706,7 +698,7 @@
     {
       "name": "ZeroGravityBlock",
       "type": "block",
-      "sortid": 31,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zero_gravity_block"
@@ -714,7 +706,7 @@
     {
       "name": "AntiJumpBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "anti_jump_block_entity_walk",
@@ -730,7 +722,7 @@
     {
       "name": "ClearBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 33,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "clear_block_entity_walk",
@@ -746,7 +738,7 @@
     {
       "name": "ClearBlock",
       "type": "block",
-      "sortid": 33,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "clear_block"
@@ -754,7 +746,7 @@
     {
       "name": "AntiJumpBlock",
       "type": "block",
-      "sortid": 32,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "anti_jump_block"
@@ -762,7 +754,7 @@
     {
       "name": "DebugBlock",
       "type": "block",
-      "sortid": 34,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "debug_block"
@@ -770,7 +762,7 @@
     {
       "name": "DebugGuiRuncode",
       "type": "gui",
-      "sortid": 35,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "debug_gui_runcode"
@@ -778,7 +770,7 @@
     {
       "name": "DebugRunCode",
       "type": "procedure",
-      "sortid": 36,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "debug_run_code",
@@ -814,7 +806,7 @@
     {
       "name": "Test",
       "type": "procedure",
-      "sortid": 37,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test",
@@ -866,7 +858,7 @@
     {
       "name": "BrickProtection",
       "type": "enchantment",
-      "sortid": 38,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brick_protection"
@@ -874,7 +866,7 @@
     {
       "name": "BrickProtectionCheck",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brick_protection_check",
@@ -890,7 +882,7 @@
     {
       "name": "PauseEffect",
       "type": "potioneffect",
-      "sortid": 40,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pause_effect"
@@ -898,7 +890,7 @@
     {
       "name": "PauseEffectStarted",
       "type": "procedure",
-      "sortid": 41,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pause_effect_started",
@@ -914,7 +906,7 @@
     {
       "name": "PauseEffectExpires",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pause_effect_expires",
@@ -930,7 +922,7 @@
     {
       "name": "Pause",
       "type": "potion",
-      "sortid": 43,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pause"
@@ -938,7 +930,7 @@
     {
       "name": "SlowBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 44,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slow_block_entity_walk",
@@ -954,7 +946,7 @@
     {
       "name": "SlowBlock",
       "type": "block",
-      "sortid": 44,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slow_block"
@@ -962,7 +954,7 @@
     {
       "name": "WinScreen",
       "type": "gui",
-      "sortid": 45,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "win_screen"
@@ -970,7 +962,7 @@
     {
       "name": "WinScreenOkayButton",
       "type": "procedure",
-      "sortid": 46,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "win_screen_okay_button",
@@ -979,18 +971,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -1002,7 +982,7 @@
     {
       "name": "WinBlock_EntityWalk",
       "type": "procedure",
-      "sortid": 47,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "win_block_entity_walk",
@@ -1034,7 +1014,7 @@
     {
       "name": "WinBlock",
       "type": "block",
-      "sortid": 45,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "win_block"
@@ -1042,10 +1022,90 @@
     {
       "name": "Ramp",
       "type": "block",
-      "sortid": 48,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ramp"
+    },
+    {
+      "name": "NormalParkourTab",
+      "type": "tab",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "normal_parkour_tab"
+    },
+    {
+      "name": "ParkourAdvRoot",
+      "type": "achievement",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "parkour_adv_root"
+    },
+    {
+      "name": "KillBrickAdv",
+      "type": "achievement",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_brick_adv"
+    },
+    {
+      "name": "ZeroGravityAdv",
+      "type": "achievement",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_adv"
+    },
+    {
+      "name": "ClearBlockAdv",
+      "type": "achievement",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_block_adv"
+    },
+    {
+      "name": "WinAdv",
+      "type": "achievement",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "win_adv"
+    },
+    {
+      "name": "AntiJumpAdv",
+      "type": "achievement",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_jump_adv"
+    },
+    {
+      "name": "PlaytestAdv",
+      "type": "achievement",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playtest_adv"
+    },
+    {
+      "name": "AntiJumpAdvGive",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_jump_adv_give",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1096,22 +1156,27 @@
   "language_map": {
     "en_us": {
       "block.madmincraftrs_parkour_mod.friction_stairs": "Friction Block Stairs",
+      "advancements.win_adv.descr": "Step on the win block",
       "death.attack.killbrick": "%1$s stepped on a kill brick",
+      "advancements.playtest_adv.title": "Build and test",
       "block.normal_parkour_mod.jump_block": "Jump Block",
       "item.madmincraftrs_parkour_mod.mob_remover": "Mob Remover",
-      "death.attack.antijump.player": "%1$s was forced upwards by %2$s while they had the anti jump effect",
-      "item.minecraft.lingering_potion.effect.zero_gravity_potion": "Lingering Potion of Zero Gravity",
-      "death.attack.killbrick.fall.player": "%2$s pushed %1$s off a block, and they landed on a kill brick",
-      "block.normal_parkour_mod.friction_block": "Friction Block",
+      "advancements.parkour_adv_root.title": "Parkour",
       "item.minecraft.lingering_potion.effect.pause": "Lingering Potion of Pausing",
+      "block.normal_parkour_mod.friction_block": "Friction Block",
+      "death.attack.killbrick.fall.player": "%2$s pushed %1$s off a block, and they landed on a kill brick",
+      "item.minecraft.lingering_potion.effect.zero_gravity_potion": "Lingering Potion of Zero Gravity",
+      "death.attack.antijump.player": "%1$s was forced upwards by %2$s while they had the anti jump effect",
       "block.madmincraftrs_parkour_mod.zero_gravity_block": "Zero Gravity Block",
       "block.normal_parkour_mod.clear_block": "Clear Block",
+      "advancements.parkour_adv_root.descr": "Running and jumping",
       "effect.madmincraftrs_parkour_mod.zero_gravity": "Zero Gravity",
       "block.madmincraftrs_parkour_mod.anti_jump_block": "Anti Jump Block",
       "item.minecraft.potion.effect.pause": "Pause Potion",
       "death.attack.killbrick.head.player": "%2$s forced %1$s upwards into a kill brick",
       "death.attack.killbrick.portal.player": "%1$s went through a portal and stepped on a killbrick while running from %2$s",
       "block.normal_parkour_mod.super_block_2": "Super Block",
+      "advancements.clear_block_adv.title": "Clear Block",
       "key.categories.parkour": "MadMincraftr\u0027s Parkour Mod",
       "death.attack.antijump": "%1$s wasn\u0027t allowed to jump",
       "effect.normal_parkour_mod.anti_jump": "Anti Jump",
@@ -1120,21 +1185,25 @@
       "block.normal_parkour_mod.win_block": "Win Block",
       "block.normal_parkour_mod.checkpoint_block": "Checkpoint Block",
       "block.madmincraftrs_parkour_mod.debug_block": "Debug Block",
-      "itemGroup.tabnormal_parkour_tab": "Normal Parkour",
+      "itemGroup.tabnormal_parkour_tab": "Normal Parkour Tab",
       "death.attack.killbrick.head": "%1$s hit their head on a kill brick",
       "item.minecraft.tipped_arrow.effect.zero_gravity_potion": "Arrow of Zero Gravity",
       "block.madmincraftrs_parkour_mod.checkpoint_block": "Checkpoint Block",
       "item.minecraft.lingering_potion.effect.potion_anti_jump": "Lingering Potion of Anti Jump",
+      "advancements.zero_gravity_adv.descr": "Get the Zero Gravity effect",
+      "advancements.win_adv.title": "Winner",
       "block.normal_parkour_mod.kill_brick": "Kill Brick",
       "effect.normal_parkour_mod.zero_gravity": "Zero Gravity",
       "block.normal_parkour_mod.debug_block": "Debug Block",
       "key.madmincraftrs_parkour_mod.build_toggle_key": "Build Toggle Key",
       "item.minecraft.potion.effect.zero_gravity_potion": "Potion of Zero Gravity",
       "block.normal_parkour_mod.speed_block": "Speed Block",
+      "advancements.anti_jump_adv.title": "Anti Jump",
       "item.minecraft.splash_potion.effect.zero_gravity_potion": "Splash Potion of Zero Gravity",
       "item.normal_parkour_mod.mob_remover": "Mob Remover",
       "block.normal_parkour_mod.anti_jump_block": "Anti Jump Block",
       "key.normal_parkour_mod.build_toggle_key": "Build Toggle Key",
+      "advancements.kill_brick_adv.title": "Kill Brick",
       "death.attack.killbrick.fall": "%1$s fell and landed on a kill brick",
       "block.madmincraftrs_parkour_mod.friction_block": "Friction Block",
       "item.minecraft.tipped_arrow.effect.potion_anti_jump": "Arrow of No Jumping",
@@ -1143,15 +1212,18 @@
       "item.minecraft.splash_potion.effect.potion_anti_jump": "Splash Potion of No Jumping",
       "item.minecraft.potion.effect.potion_anti_jump": "Anti Jumping Potion",
       "death.attack.killbrick.portal": "%1$s went through a portal and stepped on a killbrick",
-      "itemGroup.tabmad_mincraftr_parkour": "Normal Parkour",
+      "itemGroup.tabmad_mincraftr_parkour": "Mad Mincraftr Parkour",
       "death.attack.mobremover": "This message shouldn\u0027t happen. Try to recreate this on video and send it to me in the comment section on the mod\u0027s curseforge page",
       "block.normal_parkour_mod.zero_gravity_block": "Zero Gravity Block",
       "death.attack.killbrick.player": "%2$s pushed %1$s into a kill brick",
       "block.madmincraftrs_parkour_mod.speed_block": "Speed Block",
       "block.madmincraftrs_parkour_mod.effect_block": "Effect Block",
+      "advancements.zero_gravity_adv.title": "Zero Gravity",
+      "advancements.clear_block_adv.descr": "Step on a clear block",
       "block.madmincraftrs_parkour_mod.super_block_2": "Super Block",
       "death.attack.mobremover.player": "%1$s was removed by %1$s",
       "block.madmincraftrs_parkour_mod.clear_block": "Clear Block",
+      "advancements.anti_jump_adv.descr": "Get the Anti Jump Effect",
       "block.normal_parkour_mod.ramp": "Ramp (Bugged)",
       "effect.normal_parkour_mod.pause_effect": "Pause",
       "block.normal_parkour_mod.effect_block": "Effect Block",
@@ -1160,10 +1232,12 @@
       "death.attack.damagebrick": "%1$s stepped on too many damage bricks",
       "block.madmincraftrs_parkour_mod.jump_block": "Jump Block",
       "block.normal_parkour_mod.super_block": "Custom Block",
+      "advancements.playtest_adv.descr": "Use /togglebuild or its keybind",
       "block.madmincraftrs_parkour_mod.super_block": "Custom Block",
       "block.normal_parkour_mod.damage_brick": "Damage Brick",
       "item.minecraft.splash_potion.effect.pause": "Splash Potion of Pausing",
       "enchantment.normal_parkour_mod.brick_protection": "Brick Protection",
+      "advancements.kill_brick_adv.descr": "Step/Fall on a kill brick",
       "effect.madmincraftrs_parkour_mod.anti_jump": "Anti Jump",
       "block.normal_parkour_mod.slow_block": "Slow Block"
     }
@@ -1175,8 +1249,8 @@
   "workspaceSettings": {
     "modid": "normal_parkour_mod",
     "modName": "Normal Parkour",
-    "version": "RELEASE1.3.0",
-    "description": "RELEASE 1.3.0 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
+    "version": "RELEASE1.3.1",
+    "description": "RELEASE 1.3.1 | Adds parkour blocks and effects that let you make maps, or share a small parkour build with your friend.",
     "author": "MadMincraftr, SpeakaSlaysu",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/madmincraftrs-parkour-mod",
     "license": "Academic Free License v3.0",

@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:MadMincraftrParkour"
+      "value": "CUSTOM:NormalParkourTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {

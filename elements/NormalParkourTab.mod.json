@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Normal Parkour Tab",
+    "icon": {
+      "value": "CUSTOM:KillBrick"
+    },
+    "showSearch": false
+  }
+}

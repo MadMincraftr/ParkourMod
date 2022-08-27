@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "normal_parkour_mod:kill_brick"
+    },
+    "title": {
+      "translate": "advancements.kill_brick_adv.title"
+    },
+    "description": {
+      "translate": "advancements.kill_brick_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_brick_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "normal_parkour_mod:parkour_adv_root"
+}

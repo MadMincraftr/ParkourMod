@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "normal_parkour_mod:mob_remover"
+    },
+    "title": {
+      "translate": "advancements.playtest_adv.title"
+    },
+    "description": {
+      "translate": "advancements.playtest_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "playtest_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "normal_parkour_mod:parkour_adv_root"
+}

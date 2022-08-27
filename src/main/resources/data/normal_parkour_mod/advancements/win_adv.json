@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "normal_parkour_mod:win_block"
+    },
+    "title": {
+      "translate": "advancements.win_adv.title"
+    },
+    "description": {
+      "translate": "advancements.win_adv.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "win_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "normal_parkour_mod:parkour_adv_root"
+}

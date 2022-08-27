@@ -64,7 +64,7 @@ public class WinScreenButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			WinScreenOkayButtonProcedure.execute(world, x, y, z, entity);
+			WinScreenOkayButtonProcedure.execute(world, entity);
 		}
 	}
 

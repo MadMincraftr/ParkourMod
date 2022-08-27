@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "normal_parkour_mod:zero_gravity_block"
+    },
+    "title": {
+      "translate": "advancements.zero_gravity_adv.title"
+    },
+    "description": {
+      "translate": "advancements.zero_gravity_adv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zero_gravity_adv": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "normal_parkour_mod:parkour_adv_root"
+}
